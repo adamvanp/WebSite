@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link href="Template.css" rel="stylesheet" type="text/css" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Student Feedback</title>
+</head>
+
+<body>
+	
+	<h1>
+		Rock and Roll History	
+	</h1>
+		
+	<h2>
+		<a href="Home.html">Home Page</a>     
+		<a href="SignUp.html">Sign Up</a>
+		<a href="FeedBack.html">Student Feedback</a>  
+		<a href="Contact.html">Contact Us</a> 
+	
+	</h2>
+		<form id="feedback" name="feedback">
+		Gender<br></br>
+		<input type="radio" name="gender1" id="male" required>Male</input><br></br>
+  		<input type="radio" name="gender1" id="female" required>Female</input><br></br>
+		State:<br></br>
+		<select id="state_select" onchange="stateSelected()" required>
+		<option></option>
+ 		<option value="act">ACT</option>
+  		<option value="nsw">NSW</option>
+  		<option value="nt">NT</option>
+ 		<option value="qld">QLD</option>
+		<option value="sa">SA</option>
+ 		<option value="tas">TAS</option>
+		<option value="vic">VIC</option>
+ 		<option value="wa">WA</option>
+ 		</select>
+ 		
+ 		<select id="actSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="canberra">Canberra</option>
+		</select>
+		
+		<select id="nswSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="sydney">Sydney</option>
+		</select>
+		
+		<select id="ntSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="darwin">Darwin</option>
+		</select>
+
+		<select id="qldSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="brisbane">Brisbane</option>
+		</select>
+
+		<select id="saSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="adelaide">Adelaide</option>
+		</select>
+
+		<select id="tasSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="hobart">Hobart</option>
+		<option value="launceston">Launceston</option>
+		</select>
+		<select id="vicSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="melbourne">Melbourne</option>
+		</select>
+		<select id="waSelect" class="initiallyHidden" >
+		<option value=""></option>
+		<option value="perth">perth</option>
+		</select>
+
+
+
+		
+		
+		<br></br>
+		How are you feeling about classes?<br></br>
+		<input type="radio" name="satisfaction1" id="satisfied" required>Satisfied</input>
+  		<input type="radio" name="satisfaction1" id="not_satisfied" required>Not satisfied</input><br></br>
+
+		<input type="submit" value="Submit"/>
+		<input type="button" value="Reset" onClick="this.form.reset()"/>
+
+		
+		</form>
+		
+		
+	<h5>
+    	adamvp 207995
+    </h5>
+
+	<script type="text/javascript">
+		function stateSelected() {
+			var state = document.getElementById("state_select").value;
+			if(state == "act") {
+				document.getElementById("actSelect").style.display = 'block';
+				document.getElementById("nswSelect").style.display = 'none';
+				document.getElementById("ntSelect").style.display = 'none';
+				document.getElementById("qldSelect").style.display = 'none';
+				document.getElementById("saSelect").style.display = 'none';
+				document.getElementById("tasSelect").style.display = 'none';
+				document.getElementById("vicSelect").style.display = 'none';
+				document.getElementById("waSelect").style.display = 'none';
+				}
+				else if (state == "nsw"){
+				document.getElementById("nswSelect").style.display = 'block';
+				document.getElementById("actSelect").style.display = 'none';
+				document.getElementById("ntSelect").style.display = 'none';
+				document.getElementById("qldSelect").style.display = 'none';
+				document.getElementById("saSelect").style.display = 'none';
+				document.getElementById("tasSelect").style.display = 'none';
+				document.getElementById("vicSelect").style.display = 'none';
+				document.getElementById("waSelect").style.display = 'none';
+
+				}
+				else if (state == "nt"){
+				document.getElementById("ntSelect").style.display = 'block';
+				document.getElementById("actSelect").style.display = 'none';
+				document.getElementById("nswSelect").style.display = 'none';
+				document.getElementById("qldSelect").style.display = 'none';
+				document.getElementById("saSelect").style.display = 'none';
+				document.getElementById("tasSelect").style.display = 'none';
+				document.getElementById("vicSelect").style.display = 'none';
+				document.getElementById("waSelect").style.display = 'none';
+
+				}
+				else if (state == "qld"){
+				document.getElementById("qldSelect").style.display = 'block';
+				document.getElementById("actSelect").style.display = 'none';
+				document.getElementById("nswSelect").style.display = 'none';
+				document.getElementById("ntSelect").style.display = 'none';
+				document.getElementById("saSelect").style.display = 'none';
+				document.getElementById("tasSelect").style.display = 'none';
+				document.getElementById("vicSelect").style.display = 'none';
+				document.getElementById("waSelect").style.display = 'none';
+
+				}
+				else if (state == "sa"){
+				document.getElementById("saSelect").style.display = 'block';
+				document.getElementById("actSelect").style.display = 'none';
+				document.getElementById("nswSelect").style.display = 'none';
+				document.getElementById("ntSelect").style.display = 'none';
+				document.getElementById("qldSelect").style.display = 'none';
+				document.getElementById("tasSelect").style.display = 'none';
+				document.getElementById("vicSelect").style.display = 'none';
+				document.getElementById("waSelect").style.display = 'none';
+
+				}
+				else if (state == "tas"){
+				document.getElementById("tasSelect").style.display = 'block';
+				document.getElementById("actSelect").style.display = 'none';
+				document.getElementById("nswSelect").style.display = 'none';
+				document.getElementById("ntSelect").style.display = 'none';
+				document.getElementById("qldSelect").style.display = 'none';
+				document.getElementById("saSelect").style.display = 'none';
+				document.getElementById("vicSelect").style.display = 'none';
+				document.getElementById("waSelect").style.display = 'none';
+
+				}
+				else if (state == "vic"){
+				document.getElementById("vicSelect").style.display = 'block';
+				document.getElementById("actSelect").style.display = 'none';
+				document.getElementById("nswSelect").style.display = 'none';
+				document.getElementById("ntSelect").style.display = 'none';
+				document.getElementById("qldSelect").style.display = 'none';
+				document.getElementById("saSelect").style.display = 'none';
+				document.getElementById("tasSelect").style.display = 'none';
+				document.getElementById("waSelect").style.display = 'none';
+
+				}
+				else if (state == "wa"){
+				document.getElementById("waSelect").style.display = 'block';
+				document.getElementById("actSelect").style.display = 'none';
+				document.getElementById("nswSelect").style.display = 'none';
+				document.getElementById("ntSelect").style.display = 'none';
+				document.getElementById("qldSelect").style.display = 'none';
+				document.getElementById("saSelect").style.display = 'none';
+				document.getElementById("tasSelect").style.display = 'none';
+				document.getElementById("vicSelect").style.display = 'none';
+				}
+		}
+		</script>
+</body>
+
+</html>

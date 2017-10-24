@@ -1,0 +1,146 @@
+﻿body {
+    background-image:url('../../BackGround/Grey-website-background.png');
+}
+
+h1 {
+	
+	background-image:url('../../BackGround/104000194.jpg');
+	background-color:  gray;
+	font-family: Magneto;
+	color: silver;
+	font-size: 80px;
+	text-align: left;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+}
+h2 {
+ 
+    text-align: left;
+    font-size: 20px;
+    color: silver;
+}
+
+h3 {
+
+	text-align: center;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    color: silver;
+}
+h4 {
+
+	text-align: center;
+	color: silver; 
+}
+
+h5 {
+    background :gray;
+    padding-left: 20px;
+    color: silver;
+}
+
+p  {
+	color: silver; 
+    padding-left: 30px;
+}
+
+div {
+	
+	text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: silver;
+}
+
+form {
+    background-image: url('../../BackGround/form.png');
+    border-style: double;
+    border-width: thick;
+    display: block;
+    margin: auto;
+    width: 60%;
+    border: 3px solid silver;
+    padding: 10px;
+}
+
+table {
+	background-image:url('../../BackGround/form.png');
+ 	border-collapse: collapse;
+    width: 80%;
+}
+
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 11px;
+}
+
+select {
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    width:40%;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #535151;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 4px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+ul {
+
+    padding-left: 30px;
+    color: silver;
+
+}
+
+a:link, a:visited {
+    color: silver;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid silver;
+}
+
+a:hover, a:active {
+    background-color:navy;
+}
+
+.initiallyHidden { 
+	display: none; 
+}
+
+
+
+
+
